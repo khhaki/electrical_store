@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         textTheme: GoogleFonts.almaraiTextTheme(Theme.of(context).textTheme),
         primaryColor: kPrimaryColor,
-        accentColor: kPrimaryColor,
+        colorScheme:
+            ColorScheme.fromSwatch().copyWith(secondary: kPrimaryColor),
       ),
       // Arabic RTL
       localizationsDelegates: [
